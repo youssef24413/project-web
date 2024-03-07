@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="c.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="icon" href="icon.jpeg">
     <link
       href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
       rel="stylesheet"
@@ -13,45 +14,143 @@
     <title>Nike shoes</title>
   </head>
   <body>
-    <nav>
-      <div class="navtop">
-        <div class="navitem">
-          <img src="sneakers.png" alt="" />
+    <nav id="nav">
+        <div class="navTop">
+            <div class="navItem">
+                <img src="sneakers.png" alt="">
+            </div>
+            <div class="navItem">
+                <div class="search">
+                    <input type="text" placeholder="Search..." class="searchInput">
+                    <img src="search.png" width="20" height="20" alt="" class="searchIcon">
+                </div>
+            </div>
+            <div class="navItem">
+                <span class="limitedOffer">Limited Offer!</span>
+            </div>
         </div>
-        <div class="navitem">
-          <div class="serch">
-            <input type="text" class="serchinput" placeholder="Search..." />
-            <img
-              src="search.png"
-              alt=""
-              class="searchicon"
-              width="20"
-              height="20"
-            />
-          </div>
+        <div class="navBottom">
+            <h3 class="menuItem">AIR FORCE</h3>
+            <h3 class="menuItem">JORDAN</h3>
+            <h3 class="menuItem">BLAZER</h3>
+            <h3 class="menuItem">CRATER</h3>
+            <h3 class="menuItem">HIPPIE</h3>
         </div>
-        <div class="navitem">
-          <span class="Limitedloffer">Limited offer ! </span>
-        </div>
-      </div>
-      <div class="navbuttom">
-        <h3 class="menuitem">AIR FORCE</h3>
-        <h3 class="menuitem">GORDAN</h3>
-        <h3 class="menuitem">BLAZER</h3>
-        <h3 class="menuitem">CRATER</h3>
-        <h3 class="menuitem">HIPPIE</h3>
-      </div>
     </nav>
     <div class="slider">
-      <div class="sliderWrapper">
-        <div class="sliderItem">
-          <img src="air.png" alt="" class="sliderimg" />
-          <div class="sliderbg"></div>
-          <H1 class="slidertitle">AIR FORCE </BR>NEW <BR>SEASON </h1>
-           <h2 class="sliderprice">$120</h2>
-           <button class="buybutton">BUY NOW !</button> 
+        <div class="sliderWrapper">
+            <div class="sliderItem">
+                <img src="air.png" alt="" class="sliderImg">
+                <div class="sliderBg"></div>
+                <h1 class="sliderTitle">AIR FORCE</br> NEW</br> SEASON</h1>
+                <h2 class="sliderPrice">$119</h2>
+                <a href="#product">
+                    <button class="buyButton">BUY NOW!</button>
+                </a>
+            </div>
+            <div class="sliderItem">
+                <img src="jordan.png" alt="" class="sliderImg">
+                <div class="sliderBg"></div>
+                <h1 class="sliderTitle">AIR JORDAN</br> NEW</br> SEASON</h1>
+                <h2 class="sliderPrice">$149</h2>
+                <a href="#product">
+                    <button class="buyButton">BUY NOW!</button>
+                </a>
+            </div>
+            <div class="sliderItem">
+                <img src="blazer.png" alt="" class="sliderImg">
+                <div class="sliderBg"></div>
+                <h1 class="sliderTitle">BLAZER</br> NEW</br> SEASON</h1>
+                <h2 class="sliderPrice">$109</h2>
+                <a href="#product">
+                    <button class="buyButton">BUY NOW!</button>
+                </a>
+            </div>
+            <div class="sliderItem">
+                <img src="crater.png" alt="" class="sliderImg">
+                <div class="sliderBg"></div>
+                <h1 class="sliderTitle">CRATER</br> NEW</br> SEASON</h1>
+                <h2 class="sliderPrice">$129</h2>
+                <a href="#product">
+                    <button class="buyButton">BUY NOW!</button>
+                </a>
+            </div>
+            <div class="sliderItem">
+                <img src="hippie.png" alt="" class="sliderImg">
+                <div class="sliderBg"></div>
+                <h1 class="sliderTitle">HIPPIE</br> NEW</br> SEASON</h1>
+                <h2 class="sliderPrice">$99</h2>
+                <a href="#product">
+                    <button class="buyButton">BUY NOW!</button>
+                </a>
+            </div>
         </div>
-      </div>
     </div>
+    <script src="j.js"></script>
+    <div class="features">
+      <div class="feature">
+          <img src="shipping.png" alt="" class="featureIcon">
+          <span class="featureTitle">FREE SHIPPING</span>
+          <span class="featureDesc">Free worldwide shipping on all orders.</span>
+      </div>
+      <div class="feature">
+          <img class="featureIcon" src="return.png" alt="">
+          <span class="featureTitle">30 DAYS RETURN</span>
+          <span class="featureDesc">No question return and easy refund in 14 days.</span>
+      </div>
+      <div class="feature">
+          <img class="featureIcon" src="gift.png" alt="">
+          <span class="featureTitle">GIFT CARDS</span>
+          <span class="featureDesc">Buy gift cards and use coupon codes easily.</span>
+      </div>
+      <div class="feature">
+          <img class="featureIcon" src="contact.png" alt="">
+          <span class="featureTitle">CONTACT US!</span>
+          <span class="featureDesc">Keep in touch via email and support system.</span>
+      </div>
+  </div>
+
+  <div class="product" id="product">
+      <img src="air.png" alt="" class="productImg">
+      <div class="productDetails">
+          <h1 class="productTitle">AIR FORCE</h1>
+          <h2 class="productPrice">$199</h2>
+          <p class="productDesc">Lorem ipsum dolor sit amet consectetur impal adipisicing elit. Alias assumenda
+              dolorum
+              doloremque sapiente aliquid aperiam.</p>
+          <div class="colors">
+              <div class="color"></div>
+              <div class="color"></div>
+          </div>
+          <div class="sizes">
+              <div class="size">42</div>
+              <div class="size">43</div>
+              <div class="size">44</div>
+          </div>
+          <button class="productButton">BUY NOW!</button>
+      </div>
+      <div class="payment">
+          <h1 class="payTitle">Personal Information</h1>
+          <label>Name and Surname</label>
+          <input type="text" placeholder="Youssef Hesham" class="payInput">
+          <label>Phone Number</label>
+          <input type="text" placeholder="+20 234 5678" class="payInput">
+          <label>Address</label>
+          <input type="text" placeholder="Qena St 21 22-145" class="payInput">
+          <h1 class="payTitle">Card Information</h1>
+          <div class="cardIcons">
+              <img src="visa.png" width="40" alt="" class="cardIcon">
+              <img src="master.png" alt="" width="40" class="cardIcon">
+          </div>
+          <input type="password" class="payInput" placeholder="Card Number">
+          <div class="cardInfo">
+              <input type="text" placeholder="mm" class="payInput sm">
+              <input type="text" placeholder="yyyy" class="payInput sm">
+              <input type="text" placeholder="cvv" class="payInput sm">
+          </div>
+          <button class="payButton">Checkout!</button>
+          <span class="close">X</span>
+      </div>
+  </div>
   </body>
 </html>
